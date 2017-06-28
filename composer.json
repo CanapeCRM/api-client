@@ -1,0 +1,17 @@
+{
+  "name": "canapecrm/api-client",
+  "description": "CanapeCRM HTTP API client",
+  "homepage": "https://www.canapecrm.ru/",
+  "license": "Apache-2.0",
+  "type": "library",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "guzzlehttp/guzzle": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CanapeCrmApi\\": "src/"
+    }
+  }
+}
