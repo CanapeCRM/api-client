@@ -62,6 +62,16 @@ class NewDeal extends AbstractModel {
 
 
     /**
+     * @param $text
+     * @return $this
+     */
+    public function setDealContent( $text ) {
+        $this->fields['deal_content'] = $text;
+        return $this;
+    }
+
+
+    /**
      * @param $id
      * @return $this
      */
@@ -72,11 +82,11 @@ class NewDeal extends AbstractModel {
 
 
     /**
-     * @param $text
+     * @param $id
      * @return $this
      */
-    public function setDealContent( $text ) {
-        $this->fields['deal_content'] = $text;
+    public function setDealTypeId( $id ) {
+        $this->fields['type_id'] = $id;
         return $this;
     }
 
